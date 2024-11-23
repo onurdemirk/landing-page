@@ -4,6 +4,8 @@ body {
     padding: 0;
 }
 
+/* HEADER */
+
 .header {
     display: flex;
     background-color: #1f2937;
@@ -47,28 +49,31 @@ body {
 
 .hero-text {
     padding-right: 65px;
+    
 }
 
 .hero-text .main-text {
     font-size: 48px;
     color: #f9faf8;
     font-weight: 900;
+   
 }
 
 .hero-text p.main-text {
     margin-bottom: 5px;
     margin-top: 5px;
+    flex-shrink: 0;
 }
 
 
 .hero-text .secondary-text {
     font-size: 18px;
-    color: #F9FAF8;
+    color: #E5E7EB;
 }
 
 .image {
-    width: 420px;
-    height: 200px;
+    width: 390px;
+    height: auto;
 }
 
 .button {
@@ -77,4 +82,128 @@ body {
     border: 0;
     border-radius: 7px;
     padding: 10px 30px
+}
+
+/* END HEADER */
+
+/* INFO */
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 75px;
+}
+
+.info .info-header {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+}
+
+.info-secondary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 150px;
+    gap: 50px;
+
+}
+
+.frame {
+    width: 160px;
+    height: 160px;
+    border-radius:20px;
+    border: 4px solid #3882f6;
+}
+
+.info-border {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 160px;
+}
+
+/* END OF INFO */
+
+/* QUOTE */
+
+.quote-div {
+    display: flex;
+    background-color: #E5E7EB;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 300px 100px 300px;
+    
+}
+
+.quote-text {
+    font-size: 36px;
+    color: #1f2937;
+    font-style: italic;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+.author {
+    align-self: flex-end;
+    padding: 0 30px;
+    color: #1F2937;
+    font-weight: bolder;
+}
+
+/* END QUOTE */
+
+/* ACTION */
+
+.action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 150px 40px 150px;
+    background-color: #3882f6;
+    width: 700px;
+    margin: 100px auto;
+    border-radius: 10px;
+}
+
+.action p {
+    margin: 0;
+    color: #e5e7eb;
+}
+
+#action-main {
+    font-size: 25px;
+    font-weight: 700;
+    color: #f9faf8;
+}
+
+.action-button {
+    background-color: #3882f6;
+    color: #F9FAF8;
+    border: 2px solid #e5e7eb;
+    padding: 5px 30px;
+    border-radius: 7px;
+    font-size: 17px;
+}
+
+/* END ACTION */
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f2937;
+    margin-top: auto;
+    color: #f9faf8;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
